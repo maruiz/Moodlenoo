@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623162336) do
+ActiveRecord::Schema.define(version: 20140623162711) do
 
   create_table "courses", force: true do |t|
     t.string   "title"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20140623162336) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "courses_students", id: false, force: true do |t|
+    t.integer "student_id"
+    t.integer "course_id"
+  end
+
+  add_index "courses_students", ["course_id", "student_id"], name: "index_courses_students_on_course_id_and_student_id", unique: true
 
   create_table "students", force: true do |t|
     t.string   "name"
