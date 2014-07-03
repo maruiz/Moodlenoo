@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @document.title %>
+</p>
+
+<p>
+  <strong>Attachable:</strong>
+  <%= @document.attachable_id %>
+</p>
+
+<p>
+  <strong>Attachable type:</strong>
+  <%= @document.attachable_type %>
+</p>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>
