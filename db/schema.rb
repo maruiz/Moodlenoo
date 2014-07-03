@@ -11,13 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623162711) do
+ActiveRecord::Schema.define(version: 20140702162827) do
+
+  create_table "assignments", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "course_id"
+  end
 
   create_table "courses", force: true do |t|
     t.string   "title"
     t.string   "course_number"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "instructor_id"
   end
 
   create_table "courses_students", id: false, force: true do |t|
@@ -27,9 +34,23 @@ ActiveRecord::Schema.define(version: 20140623162711) do
 
   add_index "courses_students", ["course_id", "student_id"], name: "index_courses_students_on_course_id_and_student_id", unique: true
 
+  create_table "instructors", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "students", force: true do |t|
     t.string   "name"
     t.string   "university_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "submissions", force: true do |t|
+    t.integer  "score"
+    t.string   "grade",         limit: 1
+    t.integer  "assignment_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

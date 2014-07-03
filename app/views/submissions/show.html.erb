@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @submission.score %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @submission.grade %>
+</p>
+
+<p>
+  <strong>Assignment:</strong>
+  <%= @submission.assignment_id %>
+</p>
+
+<%= link_to 'Edit', edit_submission_path(@submission) %> |
+<%= link_to 'Back', submissions_path %>

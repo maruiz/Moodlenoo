@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :submissions
+
+  resources :assignments
+
+  resources :instructors
+
   resources :courses
 
   resources :students
