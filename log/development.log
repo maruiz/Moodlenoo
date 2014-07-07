@@ -1127,3 +1127,2774 @@ Migrating to CreateDocuments (20140703154011)
             FROM sqlite_temp_master
             WHERE name='index_courses_students_on_course_id_and_student_id' AND type='index'
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 11:05:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 11:06:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 13ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20140703161800)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140703161800"]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+Migrating to AddTypeToUsers (20140703162101)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "type" varchar(255)[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140703162101"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_courses_students_on_course_id_and_student_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_courses_students_on_course_id_and_student_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 11:22:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 11ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-03 11:23:01 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-03 11:23:21 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 388ms (Views: 376.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-03 11:23:22 -0500
+
+
+Started GET "/devise/sessions/new" for 127.0.0.1 at 2014-07-03 11:24:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/devise/sessions/new"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 09:27:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 362ms (Views: 342.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:27:29 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-07-07 09:27:48 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-07 09:27:58 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dx5uif518H3pYEVQmB9BojaUc3zUCwgKmqEVpWalkyo=", "user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'a@a.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-07-07 14:27:58.781810"], ["email", "a@a.com"], ["encrypted_password", "$2a$10$uAZOMPFy0nEjSy9K5x.uC.PtXMNLCMVpEPyVRrQ.OpSXEPZvUIdLm"], ["updated_at", "2014-07-07 14:27:58.781810"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-07-07 14:27:58.786588"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-07-07 14:27:58.786588"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-07-07 14:27:58.787416"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 117ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:27:58 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:33:08 -0500
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Evenie/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:34:56 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:35:16 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:37:12 -0500
+
+ArgumentError (Invalid route name: 'Hey You!'):
+  config/routes.rb:20:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:37:42 -0500
+
+ArgumentError (Invalid route name: 'hey_you!'):
+  config/routes.rb:20:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:12 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:14 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:38:25 -0500
+
+ArgumentError (Invalid route name: 'hey!'):
+  config/routes.rb:20:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:38:35 -0500
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2014-07-07 09:42:04 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 12ms
+
+ActiveRecord::RecordNotFound (Couldn't find Course with 'id'=new):
+  app/controllers/courses_controller.rb:67:in `set_course'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:42:06 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (34.7ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined method `edit_course_path' for #<#<Class:0x000001055366b8>:0x00000105535a10>):
+    17: <% end %>	
+    18: 			
+    19: 
+    20: <%= link_to 'Edit', edit_course_path(@course) %> |
+    21: <%= link_to 'Back', courses_path %>
+  app/views/courses/show.html.erb:20:in `_app_views_courses_show_html_erb__1869869613117642267_2192154960'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.9ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:42:30 -0500
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:43:07 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `edit_course_path' for #<#<Class:0x00000106a72f18>:0x00000106a723d8>):
+    17: <% end %>	
+    18: 			
+    19: 
+    20: <%= link_to 'Edit', edit_course_path(@course) %> |
+    21: <%= link_to 'Back', courses_path %>
+  app/views/courses/show.html.erb:20:in `_app_views_courses_show_html_erb__1869869613117642267_2192154960'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.4ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:45:32 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (16.8ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `edit_course_path' for #<#<Class:0x00000101e0ff68>:0x00000101e0e960>):
+    17: <% end %>	
+    18: 			
+    19: 
+    20: <%= link_to 'Edit', edit_course_path(@course) %> |
+    21: <%= link_to 'Back', courses_path %>
+  app/views/courses/show.html.erb:20:in `_app_views_courses_show_html_erb__1869869613117642267_2192154960'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:45:38 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `edit_course_path' for #<#<Class:0x00000101e0ff68>:0x00000101f93f88>):
+    17: <% end %>	
+    18: 			
+    19: 
+    20: <%= link_to 'Edit', edit_course_path(@course) %> |
+    21: <%= link_to 'Back', courses_path %>
+  app/views/courses/show.html.erb:20:in `_app_views_courses_show_html_erb__1869869613117642267_2192154960'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.9ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:46:49 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `edit_course_path' for #<#<Class:0x0000010548cac8>:0x00000105487f28>):
+    17: <% end %>	
+    18: 			
+    19: 
+    20: <%= link_to 'Edit', edit_course_path(@course) %> |
+    21: <%= link_to 'Back', courses_path %>
+  app/views/courses/show.html.erb:20:in `_app_views_courses_show_html_erb__1869869613117642267_2192154960'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:46:52 -0500
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:47:04 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?[0m  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `edit_course_path' for #<#<Class:0x0000010548cac8>:0x000001031c40e0>):
+    17: <% end %>	
+    18: 			
+    19: 
+    20: <%= link_to 'Edit', edit_course_path(@course) %> |
+    21: <%= link_to 'Back', courses_path %>
+  app/views/courses/show.html.erb:20:in `_app_views_courses_show_html_erb__1869869613117642267_2192154960'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.9ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:47:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (27.6ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `edit_course_path' for #<#<Class:0x000001053d9b08>:0x000001053d86e0>):
+    17: <% end %>	
+    18: 			
+    19: 
+    20: <%= link_to 'Edit', edit_course_path(@course) %> |
+    21: <%= link_to 'Back', courses_path %>
+  app/views/courses/show.html.erb:20:in `_app_views_courses_show_html_erb___95704868612176742_2191662840'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.6ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 64ms (Views: 58.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:24 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 09:53:30 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:12 -0500
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT  "courses".* FROM "courses"  WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" INNER JOIN "courses_students" ON "students"."id" = "courses_students"."student_id" WHERE "courses_students"."course_id" = ?  [["course_id", 1]]
+  Rendered courses/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 21ms (Views: 14.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:16 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:20 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:03:46 -0500
+Processing by HomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-07-07 15:03:47.032788"], ["name", "Bob"], ["updated_at", "2014-07-07 15:03:47.032788"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 24ms (Views: 5.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:47 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+Processing by HomeController#index as HTML
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-07-07 15:04:16.038531"], ["name", "Bob"], ["updated_at", "2014-07-07 15:04:16.038531"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 7.7ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:16 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+Processing by HomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-07-07 15:04:44.710182"], ["name", "Bob"], ["updated_at", "2014-07-07 15:04:44.710182"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 6.9ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:04:44 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+Processing by HomeController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-07-07 15:58:46.384329"], ["name", "Bob"], ["updated_at", "2014-07-07 15:58:46.384329"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 57ms (Views: 46.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:46 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+Processing by HomeController#index as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-07-07 15:58:56.418605"], ["name", "Bob"], ["updated_at", "2014-07-07 15:58:56.418605"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 5.2ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:58:56 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+Processing by HomeController#index as HTML
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-07-07 15:59:04.659354"], ["name", "Bob"], ["updated_at", "2014-07-07 15:59:04.659354"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 6.1ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:04 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+Processing by HomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-07-07 15:59:24.511875"], ["name", "Bob"], ["updated_at", "2014-07-07 15:59:24.511875"]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 5.3ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:24 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:59:33 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:04:52 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:05:07 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:05:38 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (0.6ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:15:09 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:16:20 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:20:44 -0500
+Processing by HomeController#index as HTML
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-07-07 16:20:44.231428"], ["name", "Bob"], ["updated_at", "2014-07-07 16:20:44.231428"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <b> Welcome <%= @intructor.name %></b>
+  app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___1753488550068904731_2212008200'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:21:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-07-07 16:21:01.234468"], ["name", "Bob"], ["updated_at", "2014-07-07 16:21:01.234468"]]
+  [1m[35m (7.9ms)[0m  commit transaction
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <b> Welcome <%= @intructor.name %></b>
+  app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___645454072761593173_2174336560'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:21:06 -0500
+Processing by HomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-07-07 16:21:06.893106"], ["name", "Bob"], ["updated_at", "2014-07-07 16:21:06.893106"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <b> Welcome <%= @intructor.name %></b>
+  app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___645454072761593173_2174336560'
+
+
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Evenie/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+Processing by HomeController#index as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-07-07 16:21:37.581714"], ["name", "Bob"], ["updated_at", "2014-07-07 16:21:37.581714"]]
+  [1m[35m (7.9ms)[0m  commit transaction
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 36.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:37 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+Processing by HomeController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "instructors" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-07-07 16:21:54.327701"], ["name", "Dan"], ["updated_at", "2014-07-07 16:21:54.327701"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 5.6ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:21:54 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:26:37 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:38 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 35ms (Views: 23.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:26:55 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:27:03 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:30:12 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:31:58 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:15 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:52 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:32:53 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/submissions.css?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/submissions.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 11:33:50 -0500
+
+
+Started GET "/documents/new" for 127.0.0.1 at 2014-07-07 11:33:51 -0500
+Processing by DocumentsController#new as HTML
+  Rendered documents/_form.html.erb (6.0ms)
+  Rendered documents/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 0.2ms)

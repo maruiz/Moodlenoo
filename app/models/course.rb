@@ -15,5 +15,6 @@ class Course < ActiveRecord::Base
   has_and_belongs_to_many :students
   belongs_to :instructors
   has_many :assignments
+  has_many :documents, :as => :attachable
   
 end
