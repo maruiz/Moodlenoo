@@ -15,6 +15,7 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+<<<<<<< HEAD
 
   <div class="field">
     <%= f.label :email %><br>
@@ -34,9 +35,26 @@
 
 
 
+=======
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.email_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </div>
+>>>>>>> 2b511abf95c9c42683a2936178b4971ce375a4f1
   <div class="actions">
 	<%= f.label :course_id %>
-	<%= text_field_tag :course_id %>
-    <%= f.submit %>
+	<%= text_field_tag :course_id %> 
   </div>
+  <div class="actions">
+	<%= f.label 'University id' %>
+	<%= f.number_field :university_id %> 
+  </div>
+   
+  <div>
+	  <%= f.submit %>
+  </div>	  
 <% end %>

@@ -4,7 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   def after_sign_in_path_for(user)
-    courses_url(user)
+    if user.type.eql? "Admin"
+      instructors_url(user)
+    else
+      courses_url(user)
+    end
   end
   
 end
