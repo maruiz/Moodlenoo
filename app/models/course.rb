@@ -17,4 +17,8 @@ class Course < ActiveRecord::Base
   has_many :assignments
   has_many :documents, :as => :attachable
   
+  def self.courses_for_user(user)
+    user.courses
+  end
+  
 end

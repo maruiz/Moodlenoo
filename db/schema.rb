@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140703162101) do
+ActiveRecord::Schema.define(version: 20140709154145) do
+
+  create_table "admins", force: true do |t|
+  end
 
   create_table "assignments", force: true do |t|
     t.datetime "created_at"
@@ -44,14 +47,11 @@ ActiveRecord::Schema.define(version: 20140703162101) do
   end
 
   create_table "instructors", force: true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "students", force: true do |t|
-    t.string   "name"
-    t.string   "university_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -65,6 +65,8 @@ ActiveRecord::Schema.define(version: 20140703162101) do
   end
 
   create_table "users", force: true do |t|
+    t.string   "name"
+    t.integer  "university_id"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
