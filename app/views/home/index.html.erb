@@ -1,2 +1,8 @@
-<h1> Welcome </h1>
+
+        <% if user_signed_in? %>
+             <h1> Welcome  <%= current_user.id %></h1>
+<% else %>
+<h1> Welcom </h1>
+
 	<%= link_to 'Sign In', new_user_session_path %>
+<% end %>
