@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
         <% if user_signed_in? %>
              <h1> Welcome  <%= current_user.id %></h1>
@@ -6,3 +7,14 @@
 
 	<%= link_to 'Sign In', new_user_session_path %>
 <% end %>
+=======
+<h1> Welcome </h1>
+
+&nbsp;
+	
+	<% if !user_signed_in? %>
+		<%= link_to 'Sign In', new_user_session_path %>
+	<% else %>
+	    <%= link_to 'Courses', courses_path %>
+	<% end %>
+>>>>>>> cc4146e6d309cf77e9090f7a2d185944d9eb27d2
